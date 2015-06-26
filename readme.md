@@ -31,7 +31,8 @@ inRange(30, 10); // 0..10
 
 ## API
 
-### inRange(value, [start], end)
+### inRange(value, end)
+### inRange(value, start, end)
 
 #### value
 
