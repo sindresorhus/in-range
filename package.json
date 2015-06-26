@@ -1,6 +1,6 @@
 {
   "name": "in-range",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Check if a number is in a specified range",
   "license": "MIT",
   "repository": "sindresorhus/in-range",
