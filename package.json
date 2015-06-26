@@ -1,0 +1,32 @@
+{
+  "name": "in-range",
+  "version": "0.0.0",
+  "description": "Check if a number is in a specified range",
+  "license": "MIT",
+  "repository": "sindresorhus/in-range",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "in",
+    "range",
+    "number",
+    "num",
+    "check",
+    "is"
+  ],
+  "devDependencies": {
+    "ava": "0.0.4"
+  }
+}
