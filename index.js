@@ -1,13 +1,17 @@
 'use strict';
-module.exports = function (x, start, end) {
+module.exports = (value, start, end) => {
 	if (end === undefined) {
 		end = start;
 		start = 0;
 	}
 
-	if (typeof x !== 'number' || typeof start !== 'number' || typeof end !== 'number') {
+	if (
+		typeof value !== 'number' ||
+		typeof start !== 'number' ||
+		typeof end !== 'number'
+	) {
 		throw new TypeError('Expected all arguments to be numbers');
 	}
 
-	return x >= Math.min(start, end) && x <= Math.max(end, start);
+	return value >= Math.min(start, end) && value <= Math.max(end, start);
 };
