@@ -6,14 +6,14 @@
 ## Install
 
 ```
-$ npm install --save in-range
+$ npm install in-range
 ```
 
 
 ## Usage
 
 ```js
-var inRange = require('in-range');
+const inRange = require('in-range');
 
 inRange(30, 100); // 0..100
 //=> true
@@ -42,7 +42,7 @@ Number to check.
 
 #### start
 
-Type: `number`  
+Type: `number`
 Default: `0`
 
 Start of the range.
@@ -56,4 +56,4 @@ End of the range.
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)
