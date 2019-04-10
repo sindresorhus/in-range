@@ -31,10 +31,10 @@ inRange(30, 10); // 0..10
 
 ## API
 
-### inRange(value, end)
-### inRange(value, start, end)
+### inRange(number, end)
+### inRange(number, start, end)
 
-#### value
+#### number
 
 Type: `number`
 
