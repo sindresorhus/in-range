@@ -1,11 +1,6 @@
 'use strict';
 
-module.exports = (number, start, end) => {
-	if (end === undefined) {
-		end = start;
-		start = 0;
-	}
-
+module.exports = (number, {start = 0, end}) => {
 	if (
 		typeof number !== 'number' ||
 		typeof start !== 'number' ||
