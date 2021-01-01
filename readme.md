@@ -1,4 +1,4 @@
-# in-range [![Build Status](https://travis-ci.org/sindresorhus/in-range.svg?branch=master)](https://travis-ci.org/sindresorhus/in-range)
+# in-range
 
 > Check if a number is in a given range
 
