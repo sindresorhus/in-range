@@ -5,12 +5,12 @@ declare namespace inRange {
 
 		@default 0
 		*/
-		readonly start?: number;
+		readonly start?: number | BigInt;
 
 		/**
 		End of the range.
 		*/
-		readonly end: number;
+		readonly end: number | BigInt;
 	}
 }
 
@@ -34,6 +34,6 @@ inRange(30, {end: 10}); // 0..10
 //=> false
 ```
 */
-declare function inRange(number: number, range: inRange.Range): boolean;
+declare function inRange(number: number | BigInt, range: inRange.Range): boolean;
 
 export = inRange;
