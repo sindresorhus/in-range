@@ -6,8 +6,8 @@ const isNumberOrBigInt = value => ['number', 'bigint'].includes(typeof value);
 const inRange = (number, {start = 0, end}) => {
 	if (
 		!isNumberOrBigInt(number) ||
-		!isNumberOrBigInt(number) ||
-		!isNumberOrBigInt(number)
+		!isNumberOrBigInt(start) ||
+		!isNumberOrBigInt(end)
 	) {
 		throw new TypeError('Expected each argument to be either a number or a BigInt');
 	}
