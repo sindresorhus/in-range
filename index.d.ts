@@ -5,12 +5,12 @@ declare namespace inRange {
 
 		@default 0
 		*/
-		readonly start?: number;
+		readonly start?: number | BigInt;
 
 		/**
 		End of the range.
 		*/
-		readonly end: number;
+		readonly end: number | BigInt;
 	}
 }
 
@@ -19,7 +19,7 @@ Check if a number is in a given range.
 
 @example
 ```
-import inRange = require('in-range');
+import inRange from 'in-range';
 
 inRange(30, {end: 100}); // 0..100
 //=> true
@@ -32,8 +32,12 @@ inRange(30, {start: 100, end: 10}); // 10..100
 
 inRange(30, {end: 10}); // 0..10
 //=> false
+
+// Any input can be a BigInt
+inRange(30n, {start: 100n, end: 10}); // 10..100
+//=> true
 ```
 */
-declare function inRange(number: number, range: inRange.Range): boolean;
+declare function inRange(number: number | BigInt, range: inRange.Range): boolean;
 
-export = inRange;
+export default inRange;

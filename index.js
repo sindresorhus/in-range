@@ -1,13 +1,18 @@
-'use strict';
+const min = (left, right) => left < right ? left : right;
+const max = (left, right) => left > right ? left : right;
 
-module.exports = (number, {start = 0, end}) => {
+const isNumberOrBigInt = value => ['number', 'bigint'].includes(typeof value);
+
+const inRange = (number, {start = 0, end}) => {
 	if (
-		typeof number !== 'number' ||
-		typeof start !== 'number' ||
-		typeof end !== 'number'
+		!isNumberOrBigInt(number) ||
+		!isNumberOrBigInt(start) ||
+		!isNumberOrBigInt(end)
 	) {
-		throw new TypeError('Expected all arguments to be numbers');
+		throw new TypeError('Expected each argument to be either a number or a BigInt');
 	}
 
-	return number >= Math.min(start, end) && number <= Math.max(end, start);
+	return number >= min(start, end) && number <= max(end, start);
 };
+
+export default inRange;
