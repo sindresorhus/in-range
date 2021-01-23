@@ -32,6 +32,10 @@ inRange(30, {start: 100, end: 10}); // 10..100
 
 inRange(30, {end: 10}); // 0..10
 //=> false
+
+// Any input can be a BigInt
+inRange(30n, {start: 100n, end: 10}); // 10..100
+//=> true
 ```
 */
 declare function inRange(number: number | BigInt, range: inRange.Range): boolean;
