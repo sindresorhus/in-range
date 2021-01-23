@@ -1,17 +1,15 @@
-declare namespace inRange {
-	interface Range {
-		/**
-		Start of the range.
+export interface Range {
+	/**
+	Start of the range.
 
-		@default 0
-		*/
-		readonly start?: number | BigInt;
+	@default 0
+	*/
+	readonly start?: number | BigInt;
 
-		/**
-		End of the range.
-		*/
-		readonly end: number | BigInt;
-	}
+	/**
+	End of the range.
+	*/
+	readonly end: number | BigInt;
 }
 
 /**
@@ -38,6 +36,6 @@ inRange(30n, {start: 100n, end: 10}); // 10..100
 //=> true
 ```
 */
-declare function inRange(number: number | BigInt, range: inRange.Range): boolean;
+declare function inRange(number: number | BigInt, range: Range): boolean;
 
 export default inRange;

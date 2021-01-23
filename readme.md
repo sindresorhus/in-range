@@ -44,7 +44,7 @@ Number to check.
 
 Type: `object`
 
-##### start
+##### start?
 
 Type: `number | BigInt`\
 Default: `0`

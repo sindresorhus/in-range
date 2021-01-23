@@ -4,6 +4,7 @@
 	"description": "Check if a number is in a given range",
 	"license": "MIT",
 	"repository": "sindresorhus/in-range",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
