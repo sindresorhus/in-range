@@ -1,5 +1,3 @@
-'use strict';
-
 const min = (left, right) => left < right ? left : right;
 const max = (left, right) => left > right ? left : right;
 
