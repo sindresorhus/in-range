@@ -10,6 +10,7 @@
 		"url": "sindresorhus.com"
 	},
 	"type": "module",
+	"exports": "./index.js",
 	"engines": {
 		"node": ">=12"
 	},
@@ -25,7 +26,8 @@
 		"range",
 		"number",
 		"check",
-		"is"
+		"is",
+		"bigint"
 	],
 	"devDependencies": {
 		"ava": "^3.15.0",
