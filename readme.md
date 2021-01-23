@@ -11,7 +11,7 @@ $ npm install in-range
 ## Usage
 
 ```js
-const inRange = require('in-range');
+import inRange from 'in-range';
 
 inRange(30, {end: 100}); // 0..100
 //=> true

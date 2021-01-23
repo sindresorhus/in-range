@@ -5,7 +5,7 @@ const max = (left, right) => left > right ? left : right;
 
 const isNumberOrBigInt = value => ['number', 'bigint'].includes(typeof value);
 
-module.exports = (number, {start = 0, end}) => {
+const inRange = (number, {start = 0, end}) => {
 	if (
 		!isNumberOrBigInt(number) ||
 		!isNumberOrBigInt(number) ||
@@ -16,3 +16,5 @@ module.exports = (number, {start = 0, end}) => {
 
 	return number >= min(start, end) && number <= max(end, start);
 };
+
+export default inRange;

@@ -1,5 +1,5 @@
-const test = require('ava');
-const inRange = require('.');
+import test from 'ava';
+import inRange from './index.js';
 
 test('main', t => {
 	t.true(inRange(0, {end: 0}));

@@ -19,7 +19,7 @@ Check if a number is in a given range.
 
 @example
 ```
-import inRange = require('in-range');
+import inRange from 'in-range';
 
 inRange(30, {end: 100}); // 0..100
 //=> true
@@ -36,4 +36,4 @@ inRange(30, {end: 10}); // 0..10
 */
 declare function inRange(number: number | BigInt, range: inRange.Range): boolean;
 
-export = inRange;
+export default inRange;

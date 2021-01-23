@@ -9,8 +9,9 @@
 		"email": "sindresorhus@gmail.com",
 		"url": "sindresorhus.com"
 	},
+	"type": "module",
 	"engines": {
-		"node": ">=10.4"
+		"node": ">=12"
 	},
 	"scripts": {
 		"test": "xo && ava && tsd"
